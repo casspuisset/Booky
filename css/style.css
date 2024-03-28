@@ -30,6 +30,20 @@ a {
     text-decoration: none;
 }
 
+/* début des modifs*/
+header{
+      display: flex;
+      justify-content: space-between;  
+  }
+  
+  nav {
+      display: flex;
+      justify-content: flex-end;
+      margin: 0 40px;
+      color: black;
+  }
+/* fin des modifs*/
+
 .section-title {
     margin: 0;
     font-size: 22px;
