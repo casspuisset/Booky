@@ -16,12 +16,15 @@
 body {
     display: flex;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -32,15 +35,34 @@ a {
 
 /* début des modifs*/
 header{
-      display: flex;
-      justify-content: space-between;  
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 15%;
   }
-  
-  nav {
-      display: flex;
-      justify-content: flex-end;
-      margin: 0 40px;
-      color: black;
+
+#logo_header {
+    width: 10%;
+    height: auto;
+    margin: 20px 0;
+}
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    color: black;
+}
+
+ul {
+    padding: 10px;
+    margin: 15px;
+}
+
+ul:hover {
+    color: #0065FC;
+    border-top: #0065FC solid;
+    margin-top: 0;
+    padding-top: 20px;
   }
 /* fin des modifs*/
 
