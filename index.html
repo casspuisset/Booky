@@ -12,6 +12,7 @@
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/90ffa672d9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,19 +31,32 @@
                 </ul>
             </nav>
         </header>
-        <!-- Fin Etape 3-->
-        <!-- Etape 4 -->
+        <!-- Fin Etape 3: header-->
+        <!-- Etape 4: Recherche -->
         <main>
             <div class="partie-recherche">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
             <p>En plein centre-ville ou en pleine nature</p>
-            <form method="get" action="">
-                <p>
+            <form method="post" action="#">
+                    <i class="fa-solid fa-location-dot"></i>
                     <input type="text" name="recherche" id="recherche" placeholder="Marseille, France" size="30" maxlength="20">
-                </p>
+                    <button>Rechercher</button>
             </form>
             </div>
-        <!--fin Etape 4 -->
+        <!--fin Etape 4: Recherche -->
+        <!-- Etape 5: Filtres -->
+            
+            <div class="filtres">
+                <h3>Filtres</h3>    
+                <div class="filtre"><i class="fa-solid fa-money-bill-wave"></i>Economique</div>
+                <div class="filtre"><i class="fa-solid fa-person"></i> Familial</div>
+                <div class="filtre"><i class="fa-solid fa-heart"></i> Romantique </div>
+                <div class="filtre"><i class="fa-solid fa-fire-flame-curved"></i> Nos pépites </div>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        <!-- Fin Etape 5: Filtres -->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
@@ -55,7 +69,7 @@
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images//emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -63,7 +77,7 @@
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="hebergementsfa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>

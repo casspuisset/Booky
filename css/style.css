@@ -9,8 +9,9 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
+i {
     color: var(--main-color);
+    margin: 5px;
 }
 
 body {
@@ -38,11 +39,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: start;
-    height: 15%;
+    height: 8%;
   }
 
 #logo_header {
-    width: 10%;
+    width: 6%;
     height: auto;
     margin: 20px 0;
 }
@@ -64,6 +65,64 @@ ul:hover {
     margin-top: 0;
     padding-top: 20px;
   }
+
+
+form {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 45px;
+    padding: none;
+}
+
+form i {
+    align-content: center;
+    color:black;
+    background-color: #F2F2F2;
+    font-size: 20px;
+    height: 45px;
+    margin: none;
+    padding: 0 15px 0 18px;    
+    border-radius: 20px 0 0 20px;
+}
+
+input[type=text] {
+    margin-left: -5px;
+    padding: 10px;
+    width: 200px;
+    border: 2px solid #F2F2F2;
+    border-right: #0065FC;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    float: left;
+}
+
+button {
+    background-color: #0065FC;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    height: 45px;
+    padding: 0 18px;
+    border-radius: 0 20px 20px 0;
+}
+.filtres {
+    display: flex;
+    font-weight: bold;
+}
+
+.filtre {
+    border: solid 3px var(--main-bg-color);
+    margin: 10px;
+    padding: 5px 10px 5px 5px;
+    border-radius: 25px;
+}
+
+.filtre:hover {
+    background-color: var(--filter-bg-color);
+}
 /* fin des modifs*/
 
 .section-title {
