@@ -33,20 +33,21 @@ a {
     color: inherit;
     text-decoration: none;
 }
-
+/**** Faudra faire de grosses simplifications du code *****/
 /* début des modifs*/
 header{
     display: flex;
     justify-content: space-between;
     align-items: start;
     height: 8%;
-  }
+}
 
 #logo_header {
-    width: 6%;
-    height: auto;
+    width: 61,09px;
+    height: 19px;
     margin: 20px 0;
 }
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -70,43 +71,44 @@ ul:hover {
 form {
     display: flex;
     align-items: center;
-    width: fit-content;
-    height: 45px;
-    padding: none;
+    justify-content: space-between;
+    height: 49px;
+    width: 377px;
+    border: 1px solid #F2F2F2;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 form i {
+    text-align: center;
     align-content: center;
     color:black;
     background-color: #F2F2F2;
-    font-size: 20px;
-    height: 45px;
-    margin: none;
-    padding: 0 15px 0 18px;    
-    border-radius: 20px 0 0 20px;
+    font-size: 18px;
+    height: 50px;
+    width: 49px;
+    margin: 0;
 }
 
 input[type=text] {
-    margin-left: -5px;
-    padding: 10px;
-    width: 200px;
-    border: 2px solid #F2F2F2;
-    border-right: #0065FC;
-    font-weight: bold;
+    align-items: center;
+    width: 147px;
+    font-weight: 700;
     font-size: 18px;
     outline: none;
-    float: left;
+    float: center;
+    border: none;
 }
 
 button {
     background-color: #0065FC;
-    border: none;
+    border: 1px #0065FC;
     color: white;
-    font-weight: bold;
-    font-size: 17px;
-    height: 45px;
-    padding: 0 18px;
-    border-radius: 0 20px 20px 0;
+    font-weight: 700;
+    font-size: 18px;
+    height: 49px;
+    width: 132px;
+    padding: 15px, 16px, 15px, 16px;
 }
 .filtres {
     display: flex;
@@ -124,7 +126,7 @@ button {
     background-color: var(--filter-bg-color);
 }
 /* fin des modifs*/
-
+/* partie à inspecter */
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -152,16 +154,17 @@ button {
 .neutral-star {
     color: var(--main-bg-color)
 }
-
+/* fin partie à inspecter */
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    height: 614px;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -169,11 +172,56 @@ button {
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    margin-right: 10px;
 }
 
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.hebergements .card {
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    height: 207px;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 243px;
+    height: 124px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.hebergements-cards .card-content {
+    height: 67%;
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    margin-left: 10px;
 }
 
 .populaires-title {
