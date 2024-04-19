@@ -11,7 +11,6 @@
 
 i {
     color: var(--main-color);
-    margin: 5px;
 }
 
 body {
@@ -154,6 +153,12 @@ button {
 .neutral-star {
     color: var(--main-bg-color)
 }
+
+div.card-rating {
+    display: flex;
+    justify-content: flex-start;
+}
+
 /* fin partie à inspecter */
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -191,7 +196,6 @@ button {
 }
 
 .hebergements-cards img {
-    width: 243px;
     height: 124px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -207,7 +211,7 @@ button {
 
 .hebergements-cards .card-title {
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 7px;
 }
 
 
@@ -218,6 +222,12 @@ button {
 .hebergements-cards .card-rating {
     margin-bottom: 5px;
 }
+
+.fa-star {
+    height: 13px;
+    width: 14px;
+}
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
