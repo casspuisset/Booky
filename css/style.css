@@ -76,6 +76,8 @@ form {
     border: 1px solid #F2F2F2;
     border-radius: 15px;
     overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 form i {
@@ -88,6 +90,7 @@ form i {
     width: 49px;
     margin: 0;
 }
+
 
 input[type=text] {
     align-items: center;
@@ -109,21 +112,38 @@ button {
     width: 132px;
     padding: 15px, 16px, 15px, 16px;
 }
-.filtres {
+.Info_group {
     display: flex;
+    align-items: center;
     font-weight: bold;
 }
 
+.filtres {
+    display: flex;
+}
+
 .filtre {
+    display: flex;
+    align-items: center;
     border: solid 3px var(--main-bg-color);
+    font-size: 17px;
+    padding: 4px 19px 4px 19px;
+    height: 50px;
     margin: 10px;
-    padding: 5px 10px 5px 5px;
-    border-radius: 25px;
+    border-radius: 50px;
+}
+
+.filtre i {
+    padding-right: 10px;
+    height: 22px;
+    width: 22px;
 }
 
 .filtre:hover {
     background-color: var(--filter-bg-color);
 }
+
+
 /* fin des modifs*/
 /* partie à inspecter */
 .section-title {
@@ -131,6 +151,9 @@ button {
     font-size: 22px;
 }
 
+.filtres_buttons i {
+    color: red;
+}
 .card {
     background-color: white;
     border-radius: 20px;
@@ -274,7 +297,57 @@ div.card-rating {
     margin-bottom: 5px;
 }
 
+/******** Activites ********/
 
+.activities {
+    background-color: var(--main-bg-color);
+    border-radius: 15px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.activities-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    flex-wrap: nowrap;
+}
+.activities .card {
+    display: flex;
+    flex-direction: column;
+    height: 439px;
+    margin-top: 33px;
+    overflow: hidden;
+}
+
+.activities-cards img {
+    height: 380px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.activities-cards .card-content {
+    height: 67%;
+    padding: 0 15px 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.activities-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+
+.activities-cards .card-subtitle {
+    margin: 0;
+}
+
+.activities-cards .card-rating {
+    margin-bottom: 5px;
+}
 
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
