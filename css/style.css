@@ -38,7 +38,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: start;
-    height: 8%;
+    height: 79px;
 }
 
 #logo_header {
@@ -120,6 +120,7 @@ button {
 
 .filtres {
     display: flex;
+    align-items: center;
 }
 
 .filtre {
@@ -131,12 +132,12 @@ button {
     height: 50px;
     margin: 10px;
     border-radius: 50px;
+    font-weight: bold;
+
 }
 
 .filtre i {
     padding-right: 10px;
-    height: 22px;
-    width: 22px;
 }
 
 .filtre:hover {
@@ -151,9 +152,6 @@ button {
     font-size: 22px;
 }
 
-.filtres_buttons i {
-    color: red;
-}
 .card {
     background-color: white;
     border-radius: 20px;
@@ -255,6 +253,7 @@ div.card-rating {
 .populaires {
     width: 32%;
     margin-left: 10px;
+    padding: 30px;
 }
 
 .populaires-title {
@@ -300,7 +299,7 @@ div.card-rating {
 /******** Activites ********/
 
 .activities {
-    background-color: var(--main-bg-color);
+    margin-top: 30px;
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
@@ -312,13 +311,16 @@ div.card-rating {
     align-items: center;
     justify-content:space-between;
     flex-wrap: nowrap;
+
 }
 .activities .card {
     display: flex;
     flex-direction: column;
     height: 439px;
+    width: 297px; /*a adapter plus tard */
     margin-top: 33px;
     overflow: hidden;
+    padding: 0px;
 }
 
 .activities-cards img {
@@ -328,7 +330,6 @@ div.card-rating {
 }
 .activities-cards .card-content {
     height: 67%;
-    padding: 0 15px 0 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -336,17 +337,9 @@ div.card-rating {
 }
 
 .activities-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 7px;
-}
-
-
-.activities-cards .card-subtitle {
-    margin: 0;
-}
-
-.activities-cards .card-rating {
-    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
 }
 
 
