@@ -34,36 +34,37 @@
         <!-- Fin Etape 3: header-->
         <!-- Etape 4: Recherche -->
         <main>
-            <div class="partie-recherche">
-            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-            <p>En plein centre-ville ou en pleine nature</p>
-            <form method="post" action="#">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <input type="text" name="recherche" id="recherche" placeholder="Marseille, France" size="30" maxlength="20">
-                    <button>Rechercher</button>
-            </form>
-            </div>
-        <!--fin Etape 4: Recherche -->
-        <!-- Etape 5: Filtres -->
-            
-            <div class="filtres">
-                <h3>Filtres</h3>
-                <div class="filtres">    
-                    <div class="filtre"><i class="fa-solid fa-money-bill-wave"></i>Economique</div>
-                    <div class="filtre"><i class="fa-solid fa-person"></i> Familial</div>
-                    <div class="filtre"><i class="fa-solid fa-heart"></i> Romantique </div>
-                    <div class="filtre"><i class="fa-solid fa-fire-flame-curved"></i> Nos pépites </div>
+            <section class="info_group">
+                <div class="partie-recherche">
+                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                <p>En plein centre-ville ou en pleine nature</p>
+                <form method="post" action="#">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="recherche" id="recherche" placeholder="Marseille, France" size="30" maxlength="20">
+                        <button>Rechercher</button>
+                </form>
                 </div>
-            </div>
-            <div>
-                <p><i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
-            </div>
+            <!--fin Etape 4: Recherche -->
+            <!-- Etape 5: Filtres -->
+                
+                <div class="filtres">
+                    <h3>Filtres</h3>
+                    <div class="filtres">    
+                        <div class="filtre"><i class="fa-solid fa-money-bill-wave"></i>Economique</div>
+                        <div class="filtre"><i class="fa-solid fa-person"></i> Familial</div>
+                        <div class="filtre"><i class="fa-solid fa-heart"></i> Romantique </div>
+                        <div class="filtre"><i class="fa-solid fa-fire-flame-curved"></i> Nos pépites </div>
+                    </div>
+                </div>
+                <div>
+                    <p><i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+            </section>
         <!-- Fin Etape 5: Filtres -->
         <!-- Etape 6 & 7 : Cartes hebergement-->
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <div class="hebergements_Marseille">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                    <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#">
                             <article class="card">
@@ -180,8 +181,7 @@
                             </article>
                         </a>
                     </div>
-                        <h3 class="afficher_plus">Afficher plus</h3>
-                    </div>
+                    <h3 class="afficher_plus">Afficher plus</h3>
                 </section>
         <!-- Fin Etape 6 & 7 : Cartes hebergement-->
                 <section class="populaires">
@@ -251,10 +251,9 @@
                 </section>
             </div>
             <!--Etape 8: Activites a Marseille-->
-            <div class="activities">
-                <div class="hebergements_Marseille">
+            <section class="activities">
                     <h2 class="section-title">Activités à Marseille</h2>
-                <section class="activities-cards">
+                <div class="activities-cards">
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image du port de Marseille">
@@ -279,13 +278,14 @@
                             <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
                         </article>
                     </a>
-                </section>
+                </div>
+            </section>
             <!--Fin Etape 8: Activites a Marseille-->
         </main>
         <!--Etape 9: Footer-->
         <footer>
             <section class="footer_part">
-                <h3>A propos</h3>
+                <h3>À propos</h3>
                 <ul>Fonctionnement du site</ul>
                 <ul>Conditions générales</ul>
                 <ul>Données et confidentialité</ul>
