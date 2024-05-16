@@ -20,15 +20,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 35px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     margin: 0;
     box-sizing: border-box;
-    gap: 35px;
+    gap: 30px;
 }
 
 a {
@@ -44,26 +44,28 @@ h3 {
 header{
     display: flex;
     justify-content: space-between;
-    align-items: start;
-    height: 79px;
 }
 
 #logo_header {
     width: 61,09px;
     height: 19px;
-    margin: 20px 0;
+    padding: 30px;
+    margin: 0px;
 }
 
 nav {
     display: flex;
-    justify-content: flex-end;
-    align-items: start;
     color: black;
+    gap: 68px;
+    padding: 0 50px 0 50px;
+
 }
 
 nav ul {
-    padding: 10px;
-    margin: 15px;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap : 15px;
 }
 
 nav ul:hover {
@@ -72,6 +74,11 @@ nav ul:hover {
     margin-top: 0;
     padding-top: 20px;
   }
+
+main {
+    padding: 0 50px;
+    gap : 35px;
+}
 
 .Info_group {
     gap: 35px;
@@ -83,24 +90,24 @@ form {
     justify-content: space-between;
     height: 49px;
     width: 377px;
-    border: 1px solid #F2F2F2;
+    border: 1px solid var(--main-bg-color);
     border-radius: 15px;
     overflow: hidden;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    gap: 24px;
 }
 
 form i {
     text-align: center;
     align-content: center;
     color:black;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     font-size: 18px;
     height: 50px;
     width: 49px;
-    margin: 0;
 }
-
+.form-icone {
+    display: none !important;
+}
 
 input[type=text] {
     align-items: center;
@@ -110,27 +117,33 @@ input[type=text] {
     outline: none;
     float: center;
     border: none;
+
 }
 
 button {
-    background-color: #0065FC;
-    border: 1px #0065FC;
+    padding: 15px 16px;
+    background-color: var(--main-color);
+    border: 1px var(--main-color);
     color: white;
     font-weight: 700;
     font-size: 18px;
     height: 49px;
-    width: 132px;
-    padding: 15px, 16px, 15px, 16px;
+    gap: 10px;
 }
-.Info_group {
+.info_group {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     font-weight: bold;
+    gap: 35px;
 }
 
+.filtres-block {
+    gap: 20px;
+}
 .filtres {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .filtre {
@@ -140,7 +153,6 @@ button {
     font-size: 17px;
     padding: 4px 19px 4px 19px;
     height: 50px;
-    margin: 10px;
     border-radius: 50px;
     font-weight: bold;
 
@@ -200,7 +212,6 @@ div.card-rating {
 }
 
 .hebergements-and-populaires section {
-    background-color: var(--main-bg-color);
     border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
@@ -212,6 +223,7 @@ div.card-rating {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    background-color: var(--main-bg-color);
 }
 
 .hebergements-cards {
@@ -269,6 +281,8 @@ div.card-rating {
 .populaires {
     width: 32%;
     padding: 30px;
+    background-color: var(--main-bg-color);
+
 }
 
 .populaires-title {
@@ -324,11 +338,9 @@ div.card-rating {
 
 .activities-cards {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content:space-between;
     flex-wrap: nowrap;
-    height: 439px;
     width: 100%; 
     border-radius: 20px;
     gap: 30px;
@@ -341,6 +353,12 @@ div.card-rating {
     flex-direction: column;
     padding: 0px;
     box-shadow: 0px 3px 15px 0px #0000001A;
+}
+
+.activities-text {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 a .card {
@@ -397,7 +415,6 @@ footer {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -417,9 +434,146 @@ footer {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activities {
+        gap: 30px;
+        padding: 30px;
+    }
+    .activities-cards img {
+        height: 200px;
+    }
+
+    .activities-text {
+        height: 70px;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    body {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    header { /* pourquoi ça marche pas ?*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 0;
+    }
+
+    #logo_header {
+        padding: 30px;
+        margin: 0px;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        gap: 15px;
+        border-bottom: var(--filter-bg-color) solid;
+
+    }
+    nav ul {
+        width: 50%;
+        flex: 1;
+        justify-content: center;
+    }
+
+    nav ul:hover {
+        color: var(--main-color);
+        border-bottom: var(--main-color);
+      }
+    .info_group {
+        padding: 0 20px 0 20px;
+    }
+    .form-standard {
+        display: none;
+    }
+    .form-icone {
+        display: flex !important;
+    }
+    .filtres-block {
+        width: 100%;
+        gap: 20px;
+    }
+
+    .filtres {
+        flex-wrap: wrap;
+
+    }
+    .filtre { /* Note : le problème d'alignement c'est probablement une question de typo*/
+        display: flex;
+        height: 50px;
+        flex: 1;
+        padding: 0;
+        gap: 10px;
+    }
+
+    .hebergements-and-populaires {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .hebergements {
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+    }
+
+    .hebergements-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hebergements-cards a {
+        width: 100%;
+    }
+    .populaires {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    .activities {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .activities-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .activities-cards a {
+        width: 100%;
+    }
+
+    .activities-cards .img {
+        height: 141px;
+    }
+
+    .activities-text {
+        height: auto;
+    }
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
 }

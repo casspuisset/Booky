@@ -36,20 +36,27 @@
         <main>
             <section class="info_group">
                 <div class="partie-recherche">
-                <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                <p>En plein centre-ville ou en pleine nature</p>
-                <form method="post" action="#">
+                    <div class="headlines">
+                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+                        <p>En plein centre-ville ou en pleine nature</p>
+                    </div>
+                    <form method="post" action="#" class="form-standard">
                         <i class="fa-solid fa-location-dot"></i>
                         <input type="text" name="recherche" id="recherche" placeholder="Marseille, France" size="30" maxlength="20">
                         <button>Rechercher</button>
-                </form>
+                    </form>
+                    <form method="post" action="#" class="form-icone">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <input type="text" name="recherche" id="recherche" placeholder="Marseille, France" size="30" maxlength="20">
+                        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
                 </div>
             <!--fin Etape 4: Recherche -->
             <!-- Etape 5: Filtres -->
                 
-                <div class="filtres">
-                    <h3>Filtres</h3>
-                    <div class="filtres">    
+                    <div class="filtres-block">
+                        <h3>Filtres</h3>
+                        <div class="filtres">    
                         <div class="filtre"><i class="fa-solid fa-money-bill-wave"></i>Economique</div>
                         <div class="filtre"><i class="fa-solid fa-person"></i> Familial</div>
                         <div class="filtre"><i class="fa-solid fa-heart"></i> Romantique </div>
@@ -257,31 +264,39 @@
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image du port de Marseille">
-                            <h3 class="card-title">Vieux Port</h3>
+                            <div class="activities-text">
+                                <h3 class="card-title">Vieux Port</h3>
+                            </div>
                         </article>
                     </a>
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/paul-hermann.jpg" alt="Image du port de Pomègues">
-                            <h3 class="card-title">Port de Pomègues</h3>
+                            <div class="activities-text">
+                                <h3 class="card-title">Port de Pomègues</h3>
+                            </div>
                         </article>
                     </a>
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image du parc national des Calanques">
-                            <h3 class="card-title">Parc nationale des Calanques</h3>
+                            <div class="activities-text">
+                                <h3 class="card-title">Parc nationale des Calanques</h3>
+                            </div>
                         </article>
                     </a>
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/florian-wehde.jpg" alt="Image de la cathédrale Notre-Dame-de-la-Garde">
-                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            <div class="activities-text">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
                         </article>
                     </a>
                 </div>
             </section>
             <!--Fin Etape 8: Activites a Marseille-->
-        </main>
+
         <!--Etape 9: Footer-->
         <footer>
             <section class="footer_part">
@@ -301,6 +316,7 @@
                 <ul>Nous contacter</ul>
             </section>
         </footer>
+        </main>
     </div>
 </body>
 
