@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/90ffa672d9.js" crossorigin="anonymous"></script>
 </head>
@@ -19,14 +19,14 @@
     <div class="main-container">
         <!--Etape 3: header--> 
         <header>
-            <img src="./images/logo/Booki.png" alt="Logo Booky" id="logo_header" />
+            <img src="./images/logo/Booki.png" alt="Logo Booky" id="logo_header">
             <nav>
                 <ul>
-                    <a href="#">Hébergements</a> 
+                    <li> <a href="#">Hébergements</a></li>
                     <!-- Penser à mettre l'ancre plus tard-->
                 </ul>
                 <ul>
-                    <a href="#">Activités</a>
+                    <li> <a href="#">Activités</a></li>
                     
                 </ul>
             </nav>
@@ -42,12 +42,12 @@
                     </div>
                     <form method="post" action="#" class="form-standard">
                         <i class="fa-solid fa-location-dot"></i>
-                        <input type="text" name="recherche" id="recherche" placeholder="Marseille, France" size="30" maxlength="20">
+                        <input type="text" id="recherche" placeholder="Marseille, France" size="30" maxlength="20">
                         <button>Rechercher</button>
                     </form>
                     <form method="post" action="#" class="form-icone">
                         <i class="fa-solid fa-location-dot"></i>
-                        <input type="text" name="recherche" id="recherche" placeholder="Marseille, France" size="30" maxlength="20">
+                        <input type="text" id="recherche-phone" placeholder="Marseille, France" size="30" maxlength="20">
                         <button><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
@@ -63,8 +63,9 @@
                         <div class="filtre"><i class="fa-solid fa-fire-flame-curved"></i> Nos pépites </div>
                     </div>
                 </div>
-                <div>
-                    <p><i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="info-barre">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <a>Plus de 500 logements sont disponibles dans cette ville</a>
                 </div>
             </section>
         <!-- Fin Etape 5: Filtres -->
@@ -301,19 +302,25 @@
         <footer>
             <section class="footer_part">
                 <h3>À propos</h3>
-                <ul>Fonctionnement du site</ul>
-                <ul>Conditions générales</ul>
-                <ul>Données et confidentialité</ul>
+                <ul>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales</li>
+                    <li>Données et confidentialité</li>
+                </ul>
             </section>
             <section class="footer_part">
                 <h3>Nos Hébergements</h3>
-                <ul>Chartes qualité</ul>
-                <ul>Proposer votre hôtel</ul>
+                <ul>
+                    <li>Chartes qualité</li>
+                    <li>Proposer votre hôtel</li>
+                </ul>
             </section>
             <section class="footer_part">
                 <h3>Assistance</h3>
-                <ul>Centre d'aide</ul>
-                <ul>Nous contacter</ul>
+                <ul>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ul>
             </section>
         </footer>
         </main>
