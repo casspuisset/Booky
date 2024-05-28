@@ -47,7 +47,7 @@ header{
     justify-content: space-between;
 }
 
-#logo_header {
+#logo-header {
     width: 61px;
     height: 19px;
     padding: 30px;
@@ -80,10 +80,6 @@ main {
     display: flex;
     flex-direction: column;
     gap: 35px;        
-}
-
-.Info_group {
-    gap: 35px;
 }
 
 form {
@@ -144,7 +140,7 @@ button {
     gap: 10px;
 }
 
-.info_group {
+.info-group {
     display: flex;
     flex-direction: column;
     gap: 35px;
@@ -188,12 +184,19 @@ button {
     align-items: center;
 }
 
-.fa-info {
-    border: 3px solid #F2F2F2;
-    border-radius: 100%;
-    padding : 10px 0px 6px 16px;
-    width: 24px;
+.circle {
     height: 24px;
+    min-width: 24px;
+    border-radius: 50%;
+    border: 2px solid #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-info {
+    color: #0065FC;
+    font-size: 12px;
 }
 
 .section-title {
@@ -229,7 +232,7 @@ div.card-rating {
     justify-content: flex-start;
 }
 
-/****** Hebergements And Populaires ***********/
+/****** Hebergements & Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     height: auto;
@@ -248,7 +251,8 @@ div.card-rating {
     width: 65%;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    justify-content: center;
+    gap: 35px;
     background-color: var(--main-bg-color);
 }
 
@@ -278,6 +282,7 @@ div.card-rating {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 .hebergements-cards .card-content {
     height: 67%;
     padding: 0 15px 0 15px;
@@ -404,7 +409,7 @@ footer {
     display: flex;
 }
 
-.footer_part {
+.footer-part {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -413,7 +418,7 @@ footer {
     gap: 15px;
 }
 
-.footer_part ul {
+.footer-part ul {
     padding-left: 0;
     margin: 0;
     display: flex;
@@ -498,7 +503,7 @@ footer {
         gap: 35px;        
     }
 
-    header { /* pourquoi ça marche pas ?*/
+    header {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -506,10 +511,6 @@ footer {
         gap: 0;
     }
 
-    #logo_header {
-        padding: 30px;
-        margin: 0px;
-    }
     nav {
         width: 100%;
         display: flex;
@@ -527,9 +528,11 @@ footer {
         color: var(--main-color);
         border-bottom: var(--main-color);
       }
-    .info_group {
+
+    .info-group {
         padding: 0 20px 0 20px;
     }
+
     .form-standard {
         display: none;
     }
