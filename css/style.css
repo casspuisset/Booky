@@ -599,6 +599,10 @@ footer {
         flex-direction: column-reverse;
     }
 
+    .hebergements-and-populaires section {
+        padding: 30px 20px 30px 20px;
+    }
+
     .hebergements {
         display: flex;
         flex-direction: column;
